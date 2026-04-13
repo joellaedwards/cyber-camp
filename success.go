@@ -9,7 +9,7 @@ func success() string {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congratulations! You Escaped the Cyber Threats</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="mountain" data-page="success">
 <main>
