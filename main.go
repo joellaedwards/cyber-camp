@@ -3,10 +3,17 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 )
 
 func main() {
-	fmt.Println("Running on port: 8080")
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "8080"
+	}
+	
+	fmt.Println("Running on port: ", port)
 
 	router := http.NewServeMux()
 	router.Handle("/styles.css", http.FileServer(http.Dir(".")))
@@ -17,7 +24,7 @@ func main() {
 	router.HandleFunc("/coolOffTrailStuff", page3Handler)
 	router.HandleFunc("/donezo", successHandler)
 
-	http.ListenAndServe(":8080", router)
+	http.ListenAndServe(":"+port, router)
 }
 
 func welcomeHandler(w http.ResponseWriter, r *http.Request) {
