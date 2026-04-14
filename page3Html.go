@@ -16,7 +16,7 @@ func page3Html() string{
     <header>
         <div class="progress-badge">Camp Challenge 3 of 3</div>
         <h1>Camp Challenge 3: Cookie Snack Break</h1>
-        <p>This trail stop is all about cookies, but not the kind you eat. Use your browser's developer tools to change the <code>access</code> cookie value from <code>denied</code> to <code>granted</code> so you can grab the snack and keep climbing.</p>
+        <p>This trail stop is all about cookies, but not the kind you eat. Use your browser's developer tools to add a cookie called <code>access</code> with the value <code>granted</code> so you can grab the snack and keep climbing.</p>
     </header>
 
     <section class="card">
