@@ -14,7 +14,7 @@ func success() string {
 <body class="mountain" data-page="success">
 <main>
     <header>
-        <h1>Congratulations! You Escaped the Cyber Threats</h1>
+        <h1>Congratulations!! You Escaped the Cyber Threats</h1>
         <p>You've successfully navigated through phishing detection, URL manipulation, and cookie alteration. Remember to stay vigilant online!</p>
     </header>
 
